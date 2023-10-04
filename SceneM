@@ -23,4 +23,9 @@ public class SceneM : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void RestartApp()//to restart the scene
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
